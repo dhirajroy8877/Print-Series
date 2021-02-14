@@ -1,0 +1,27 @@
+import java.util.*;
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[]) {
+		Scanner scn = new Scanner(System.in);
+		int N1 = scn.nextInt();
+		int N2 = scn.nextInt();
+		int i = 1;
+		int n = 1;
+		int series;
+		while(i<=N1){
+			series = (3*n+2);
+			
+			if(series % N2 != 0){
+				System.out.println(series);
+			}
+
+			if(series % N2 == 0){
+				i--;
+				// n++;
+			}
+			
+			i++;
+			n++;	
+		}
+    }
+}
